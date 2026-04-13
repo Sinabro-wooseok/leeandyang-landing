@@ -163,15 +163,19 @@ body {
     text-decoration: none; transition: background 0.2s;
 }
 .btn-pill:hover { background: rgba(41,151,255,0.10); }
-/* 히어로 우측 이미지 */
+/* 히어로 우측 이미지 — 누끼 PNG용 (투명 배경) */
 .hero-img {
     height: 100%; min-height: 560px;
     overflow: hidden; position: relative;
+    display: flex; align-items: flex-end; justify-content: center;
 }
 .hero-img img {
-    width: 100%; height: 100%;
-    object-fit: cover; object-position: center;
+    width: 100%; max-width: 680px;
+    height: 100%; max-height: 680px;
+    object-fit: contain; object-position: center bottom;
     display: block;
+    /* 살짝 우측 하단으로 오프셋 → 더 다이나믹한 배치 */
+    transform: translateX(6%) translateY(4%);
 }
 
 /* ── 갤러리 — 컬러웨이 ───────────────────────── */
@@ -450,7 +454,8 @@ body {
     .hero { padding: 0; min-height: auto; }
     .hero-inner { grid-template-columns: 1fr; }
     .hero-text { padding: 100px 20px 48px; order: 1; }
-    .hero-img { min-height: 320px; order: 2; }
+    .hero-img { min-height: 260px; order: 2; }
+    .hero-img img { transform: none; max-height: 280px; }
     .hero-btns { flex-direction: column; align-items: flex-start; }
     .sec  { padding: 60px 20px; }
     .kang-grid    { grid-template-columns: 1fr; }
@@ -494,7 +499,7 @@ body {
             </div>
         </div>
         <div class="hero-img rv d2">
-            <img src="/data/item/1747209309/thumb-1_800x800.jpg" alt="베나프로 맞춤 축구화" loading="eager">
+            <img src="/data/item/1747209309/hero_nobg.png" alt="베나프로 맞춤 축구화" loading="eager">
         </div>
     </div>
 </section>
