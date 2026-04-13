@@ -112,12 +112,22 @@ body {
 }
 .nav-cta:hover { opacity: 0.85; }
 
-/* ── HERO ────────────────────────────────────── */
+/* ── HERO ─ 좌(텍스트) / 우(이미지) 분할 ──── */
 .hero {
     background: var(--black);
-    padding: 110px 22px 0;
-    text-align: center;
+    padding: 48px 0 0;
     overflow: hidden;
+    min-height: 100vh;
+    display: flex; align-items: stretch;
+}
+.hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px; margin: 0 auto;
+    width: 100%; align-items: center;
+}
+.hero-text {
+    padding: 80px 52px 80px 44px;
 }
 .hero-eyebrow {
     font-size: 12px; font-weight: 600; letter-spacing: -0.12px;
@@ -126,20 +136,18 @@ body {
 }
 .hero-h1 {
     font-family: 'SF Pro Display', -apple-system, sans-serif;
-    font-size: clamp(36px, 6vw, 64px); font-weight: 600;
+    font-size: clamp(34px, 4.5vw, 64px); font-weight: 600;
     line-height: 1.07; letter-spacing: -0.28px;
-    color: #fff; max-width: 680px; margin: 0 auto 18px;
+    color: #fff; margin-bottom: 18px;
 }
 .hero-h1 span { color: rgba(255,255,255,0.38); }
 .hero-sub {
-    font-size: clamp(16px, 2vw, 21px); font-weight: 400;
+    font-size: clamp(15px, 1.5vw, 19px); font-weight: 400;
     line-height: 1.47; letter-spacing: -0.374px;
-    color: rgba(255,255,255,0.56);
-    max-width: 520px; margin: 0 auto 36px;
+    color: rgba(255,255,255,0.56); margin-bottom: 36px;
 }
 .hero-btns {
-    display: flex; gap: 12px; justify-content: center;
-    flex-wrap: wrap; margin-bottom: 64px;
+    display: flex; gap: 12px; flex-wrap: wrap;
 }
 .btn-blue {
     background: var(--blue); color: #fff;
@@ -155,15 +163,15 @@ body {
     text-decoration: none; transition: background 0.2s;
 }
 .btn-pill:hover { background: rgba(41,151,255,0.10); }
-/* 히어로 제품 이미지 */
-.hero-img-wrap {
-    max-width: 680px; margin: 0 auto;
-    line-height: 0;
+/* 히어로 우측 이미지 */
+.hero-img {
+    height: 100%; min-height: 560px;
+    overflow: hidden; position: relative;
 }
-.hero-img-wrap img {
-    width: 100%; height: auto;
+.hero-img img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center;
     display: block;
-    /* Apple: 제품은 솔리드 배경 위에, 이미지 자체 그림자 */
 }
 
 /* ── 갤러리 — 컬러웨이 ───────────────────────── */
@@ -439,7 +447,11 @@ body {
 
 /* ── 반응형 ────────────────────────────────────── */
 @media (max-width: 680px) {
-    .hero { padding: 88px 20px 0; }
+    .hero { padding: 0; min-height: auto; }
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-text { padding: 100px 20px 48px; order: 1; }
+    .hero-img { min-height: 320px; order: 2; }
+    .hero-btns { flex-direction: column; align-items: flex-start; }
     .sec  { padding: 60px 20px; }
     .kang-grid    { grid-template-columns: 1fr; }
     .kang-block:first-child { border-radius: 12px 12px 0 0; }
@@ -471,15 +483,19 @@ body {
 
 <!-- ① HERO -->
 <section class="hero">
-    <p class="hero-eyebrow rv">베나프로 맞춤 축구화</p>
-    <h1 class="hero-h1 rv d1">내 발을 위해<br>처음부터 만드는<br><span>유일한 축구화.</span></h1>
-    <p class="hero-sub rv d2">발볼·발등·발길이를 실측해 손으로 한 켤레씩 제작합니다.<br>오직 내 발만을 위한 맞춤 수제 축구화.</p>
-    <div class="hero-btns rv d3">
-        <a href="/apply.php" class="btn-blue">지금 제작 신청하기</a>
-        <a href="#price" class="btn-pill">가격 확인하기</a>
-    </div>
-    <div class="hero-img-wrap rv d4">
-        <img src="/data/item/1719737285/01.jpg" alt="베나프로 맞춤 축구화" loading="eager">
+    <div class="hero-inner">
+        <div class="hero-text">
+            <p class="hero-eyebrow rv">베나프로 맞춤 축구화</p>
+            <h1 class="hero-h1 rv d1">내 발을 위해<br>처음부터 만드는<br><span>유일한 축구화.</span></h1>
+            <p class="hero-sub rv d2">발볼·발등·발길이를 실측해 손으로 한 켤레씩 제작합니다.<br>오직 내 발만을 위한 맞춤 수제 축구화.</p>
+            <div class="hero-btns rv d3">
+                <a href="/apply-custom.php" class="btn-blue">맞춤 제작 신청하기</a>
+                <a href="#price" class="btn-pill">가격 확인하기</a>
+            </div>
+        </div>
+        <div class="hero-img rv d2">
+            <img src="/data/item/1747209309/thumb-1_800x800.jpg" alt="베나프로 맞춤 축구화" loading="eager">
+        </div>
     </div>
 </section>
 
@@ -487,16 +503,16 @@ body {
 <section class="gallery">
     <div class="gallery-row">
         <div class="gallery-item">
-            <img src="/data/item/1719735403/02.jpg" alt="베나프로 올블랙">
+            <img src="/data/item/1719735403/thumb-01_800x800.jpg" alt="베나프로 올블랙" loading="lazy">
         </div>
         <div class="gallery-item">
-            <img src="/data/item/1719736820/02.jpg" alt="베나프로 화이트">
+            <img src="/data/item/1747209309/thumb-3_800x800.jpg" alt="베나프로 올화이트" loading="lazy">
         </div>
         <div class="gallery-item">
-            <img src="/data/item/1719737285/02.jpg" alt="베나프로 블랙">
+            <img src="/data/item/1719736820/thumb-03_800x800.jpg" alt="베나프로 화이트" loading="lazy">
         </div>
     </div>
-    <p class="gallery-caption rv">All Black · White · Black — 색상은 자유롭게 선택 가능합니다.</p>
+    <p class="gallery-caption rv">All Black · All White · White — 색상·스터드는 자유롭게 선택 가능합니다.</p>
 </section>
 
 <!-- ③ 캥거루 가죽 -->
