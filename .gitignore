@@ -1,0 +1,52 @@
+# 민감 정보
+*.key
+*.pem
+*.json
+data/dbconfig.php
+data/session/
+data/cache/
+
+# 이미지/스크린샷 (용량)
+*.png
+*.jpg
+*.jpeg
+*.HEIC
+*.psd
+*.xlsx
+*.xml
+
+# 그누보드 코어 (수정 금지 파일군)
+lib/
+bbs/
+shop/
+adm/
+install/
+skin/
+css/
+js/
+plugin/
+rss/
+lang/
+extend/
+dbeditor/
+g4_import*.php
+yc4_import*.php
+nicepage/
+mobile/
+game/
+domepet/
+theme/
+img/
+
+# 기타
+.DS_Store
+.vscode/
+.claude/
+.playwright-mcp/
+*.html
+*.md
+*.txt
+perms.sh
+naversitemap.xml
+sitemap*
+robots.txt
