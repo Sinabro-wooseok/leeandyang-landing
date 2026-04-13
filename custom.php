@@ -1,7 +1,7 @@
 <?php
 /**
- * 맞춤 축구화 제작 전용 랜딩 페이지
- * SEO: 맞춤축구화, 수제축구화, 발볼 넓은 축구화, 개인맞춤축구화
+ * 맞춤 축구화 제작 전용 랜딩 페이지 — 베나프로(Venafro)
+ * Apple design-md 기반 (VoltAgent/awesome-design-md)
  */
 define('_GNUBOARD_', true);
 require_once dirname(__FILE__) . '/common.php';
@@ -11,13 +11,13 @@ require_once dirname(__FILE__) . '/common.php';
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>맞춤 축구화 제작 전문 | 수제축구화 · 발볼 넓은 축구화 | 리앤양</title>
-<meta name="description" content="나만의 맞춤 축구화 제작 전문 리앤양. 캥거루 가죽 최상급 어퍼, 발볼 넓은 분·무지외반증·특수 발형 모두 가능. 베나프로 350,000원~, 2주 완성. 카카오톡 21apro 24시간 상담.">
-<meta name="keywords" content="맞춤축구화, 수제축구화, 개인맞춤축구화, 발볼넓은축구화, 와이드핏축구화, 맞춤축구화제작, 수제축구화제작, 리앤양">
+<title>맞춤 축구화 제작 전문 | 캥거루 가죽 수제축구화 · 발볼 넓은 축구화 | 리앤양</title>
+<meta name="description" content="나만의 발형으로 만드는 캥거루 가죽 수제 맞춤 축구화 베나프로. 발볼 넓은 분·무지외반증·특수 발형 모두 제작 가능. 35만원~, 전국 택배 접수. 카카오톡 21apro 24시간 상담.">
+<meta name="keywords" content="맞춤축구화,수제축구화,캥거루가죽축구화,발볼넓은축구화,개인맞춤축구화,리앤양,베나프로">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="리앤양">
-<meta property="og:title" content="맞춤 축구화 제작 전문 리앤양 | 수제 핸드메이드 · 발볼 넓은 축구화">
-<meta property="og:description" content="나만의 발형으로 만드는 수제 맞춤 축구화. 발볼 넓은 분, 무지외반증, 특수 발형 모두 대응. 35만원, 2주 완성.">
+<meta property="og:title" content="캥거루 가죽 수제 맞춤 축구화 베나프로 | 리앤양">
+<meta property="og:description" content="나만의 발형으로 제작하는 캥거루 가죽 수제 맞춤 축구화. 발볼·발등·발길이 실측, 35만원~, 2~4주 완성.">
 <meta property="og:url" content="https://leeandyang.co.kr/custom.php">
 <meta property="og:image" content="https://leeandyang.co.kr/thema/Miso-Basic4/main/image/og-image.jpg">
 <link rel="canonical" href="https://leeandyang.co.kr/custom.php">
@@ -25,32 +25,25 @@ require_once dirname(__FILE__) . '/common.php';
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "맞춤 축구화 베나프로",
-  "description": "발형을 실측해 수제로 제작하는 핸드메이드 맞춤 축구화. 발볼 넓은 분, 무지외반증, 특수 발형 모두 제작 가능.",
+  "name": "베나프로 맞춤 축구화",
+  "description": "캥거루 천연가죽 어퍼, 발형 실측 수제 제작 맞춤 축구화. 발볼 넓은 분·무지외반증·특수 발형 모두 제작 가능.",
   "brand": { "@type": "Brand", "name": "리앤양" },
   "offers": {
     "@type": "AggregateOffer",
-    "lowPrice": "350000",
-    "highPrice": "450000",
-    "priceCurrency": "KRW",
+    "lowPrice": "350000", "highPrice": "450000", "priceCurrency": "KRW",
     "availability": "https://schema.org/InStock",
     "url": "https://leeandyang.co.kr/custom.php"
   },
   "provider": {
-    "@type": "LocalBusiness",
-    "name": "리앤양",
-    "telephone": "010-3547-7744",
+    "@type": "LocalBusiness", "name": "리앤양", "telephone": "010-3547-7744",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "경기도 고양시 덕양구",
-      "streetAddress": "서오릉로 433 한우만 3층",
-      "addressCountry": "KR"
+      "streetAddress": "서오릉로 433 한우만 3층", "addressCountry": "KR"
     }
   }
 }
 </script>
-<link rel="preconnect" href="https://cdn.jsdelivr.net">
-<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
 <!-- Google Ads 전환 추적 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-998917058"></script>
 <script>
@@ -60,594 +53,651 @@ gtag('js', new Date());
 gtag('config', 'AW-998917058');
 </script>
 <style>
-/* === 한국 UI + Apple Design 하이브리드 ===
-   - 타이포: Pretendard (한국 표준) + SF Pro 폴백
-   - 컬러: Apple 블랙/그레이 팔레트 + 한국 앱 스타일 웜톤
-   - 카드: 한국 스타일 라운드(18-20px) + Apple 소프트 섀도우
-   - 버튼: 한국 앱 필 스타일
-   - 섹션: Apple 블랙↔라이트 교차 리듬
-*/
+/*
+ * Apple Design System — VoltAgent/awesome-design-md
+ * #000000 hero / #f5f5f7 gray sections / #ffffff white sections
+ * SF Pro Display(20px+) · SF Pro Text(19px 이하)
+ * Apple Blue #0071e3 — 인터랙티브 전용, 다른 색상 accent 없음
+ * 카드 보더 없음 · 섀도우 rgba(0,0,0,0.22) 3px 5px 30px
+ * Headline: line-height 1.07 · letter-spacing -0.28px
+ * Body: line-height 1.47 · letter-spacing -0.374px
+ * Primary CTA: 8px radius · Pill link: 980px
+ */
 :root {
-    --bg:        #f8f8fb;       /* 약간 따뜻한 오프화이트 (한국 앱) */
-    --surface:   #ffffff;
-    --dark:      #000000;       /* Apple 히어로 블랙 */
-    --label:     #1d1d1f;       /* Apple 네어블랙 */
-    --label2:    #3c3c43;       /* 보조 텍스트 */
-    --label3:    #8e8e93;       /* 서브 텍스트 */
-    --separator: #e5e5ea;       /* iOS 셀 구분선 */
-    --blue:      #0071e3;       /* Apple Blue (인터랙티브 전용) */
-    --blue-dark: #2997ff;       /* 다크 배경용 링크 */
-    --dark-card: #1c1c1e;       /* iOS 다크모드 카드 */
-    --featured-from: #1a1a2e;  /* 추천 카드 그라데이션 시작 */
-    --featured-to:   #16213e;  /* 추천 카드 그라데이션 끝 */
-    --radius:    14px;          /* 한국 앱 카드 라운드 */
-    --radius-lg: 20px;          /* 강조 카드 */
-    --radius-pill: 980px;
-    --shadow-sm: 0 2px 8px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
-    --shadow:    0 4px 20px rgba(0,0,0,0.09), 0 1px 4px rgba(0,0,0,0.06);
-    --shadow-lg: 0 8px 40px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.10);
-    --green:     #34c759;
+    --black:     #000000;
+    --gray:      #f5f5f7;
+    --white:     #ffffff;
+    --label:     #1d1d1f;
+    --label-s:   rgba(0,0,0,0.80);
+    --label-t:   rgba(0,0,0,0.48);
+    --sep:       rgba(0,0,0,0.10);
+    --blue:      #0071e3;
+    --blue-dark: #2997ff;
+    --card-dark: #272729;
+    --card-d2:   #2a2a2d;
+    --shadow:    rgba(0,0,0,0.22) 3px 5px 30px 0px;
+    --green:     #32d74b;
 }
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-    /* Pretendard (한국 표준) + SF Pro 폴백 */
-    font-family: 'Pretendard Variable', Pretendard,
-                 'SF Pro Display', 'SF Pro Text',
-                 -apple-system, BlinkMacSystemFont,
-                 'Helvetica Neue', Arial, sans-serif;
-    background: var(--bg);
-    color: var(--label);
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
+    font-family: 'SF Pro Text', 'SF Pro Display', -apple-system,
+                 BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--white); color: var(--label);
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
 }
 
-/* === Nav — 라이트 프로스트 (한국 앱 표준) === */
+/* ── NAV ─────────────────────────────────────── */
 .nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-    height: 52px;
-    background: rgba(255,255,255,0.82);
+    position: fixed; inset: 0 0 auto 0; z-index: 300;
+    height: 48px;
+    background: rgba(0,0,0,0.82);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-    border-bottom: 1px solid var(--separator);
     display: flex; align-items: center; justify-content: space-between;
-    padding: 0 24px;
+    padding: 0 22px;
 }
 .nav-logo {
-    font-size: 16px; font-weight: 700; letter-spacing: 1px;
-    color: var(--label); text-decoration: none;
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    font-size: 15px; font-weight: 600; letter-spacing: 1.5px;
+    color: #fff; text-decoration: none; opacity: 0.9;
 }
+.nav-back {
+    font-size: 14px; font-weight: 400; letter-spacing: -0.224px;
+    color: var(--blue-dark); text-decoration: none;
+    display: flex; align-items: center; gap: 4px;
+}
+.nav-back:hover { text-decoration: underline; }
 .nav-cta {
-    font-size: 13px; font-weight: 600;
-    color: var(--blue); text-decoration: none;
-    padding: 7px 18px;
-    border: 1.5px solid var(--blue);
-    border-radius: var(--radius-pill);
-    transition: background 0.18s, color 0.18s;
+    font-size: 14px; font-weight: 400; letter-spacing: -0.224px;
+    background: var(--blue); color: #fff;
+    padding: 6px 16px; border-radius: 8px;
+    text-decoration: none; transition: opacity 0.2s;
 }
-.nav-cta:hover { background: var(--blue); color: #fff; }
+.nav-cta:hover { opacity: 0.85; }
 
-/* === 히어로 — Apple 블랙 + 한국 앱 그라데이션 하단 === */
+/* ── HERO ────────────────────────────────────── */
 .hero {
-    background: linear-gradient(170deg, #000 70%, #0a0a1a 100%);
-    color: #fff;
-    padding: 120px 24px 88px;
-    text-align: center; min-height: 480px;
+    background: var(--black);
+    padding: 110px 22px 90px;
+    text-align: center;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 520px;
 }
 .hero-eyebrow {
-    display: inline-flex; align-items: center;
-    background: rgba(255,255,255,0.10);
-    border: 1px solid rgba(255,255,255,0.18);
-    border-radius: var(--radius-pill);
-    font-size: 11px; font-weight: 600; letter-spacing: 1px;
-    color: rgba(255,255,255,0.72); text-transform: uppercase;
-    padding: 4px 14px; margin-bottom: 20px;
-}
-.hero h1 {
-    font-size: clamp(32px, 5.5vw, 56px); font-weight: 700;
-    line-height: 1.10; letter-spacing: -0.5px;
-    color: #fff; margin-bottom: 18px; max-width: 680px;
-}
-.hero h1 em { color: rgba(255,255,255,0.45); font-style: normal; }
-.hero-sub {
-    font-size: clamp(15px, 2vw, 18px); font-weight: 400;
-    color: rgba(255,255,255,0.60); line-height: 1.6; letter-spacing: -0.2px;
-    max-width: 520px; margin-bottom: 36px;
-}
-.price-badge {
-    display: inline-block;
-    background: rgba(0,113,227,0.15);
-    border: 1px solid rgba(0,113,227,0.40);
-    color: #60aaff;
-    font-size: 13px; font-weight: 600; letter-spacing: -0.1px;
-    padding: 6px 16px; border-radius: var(--radius-pill); margin-bottom: 28px;
-}
-.btn-primary {
-    display: inline-block; background: var(--blue); color: #fff;
-    font-size: 16px; font-weight: 600; letter-spacing: -0.2px;
-    padding: 13px 28px; border-radius: var(--radius-pill);
-    text-decoration: none; transition: opacity 0.18s, transform 0.15s;
-}
-.btn-primary:hover { opacity: 0.88; transform: scale(1.02); }
-
-/* === 섹션 공통 === */
-.section { padding: 80px 24px; }
-.section.white { background: var(--surface); }
-.section.gray  { background: var(--bg); }
-.section.dark  { background: var(--dark); color: #fff; }
-.section-inner { max-width: 960px; margin: 0 auto; }
-
-/* 섹션 eyebrow — 한국 앱 스타일 컬러 칩 */
-.section-eyebrow {
-    display: inline-block;
-    background: rgba(0,113,227,0.08);
-    color: var(--blue);
-    font-size: 12px; font-weight: 700; letter-spacing: 0.3px;
-    padding: 4px 12px; border-radius: var(--radius-pill);
+    font-size: 12px; font-weight: 600; letter-spacing: -0.12px;
+    color: rgba(255,255,255,0.48); text-transform: uppercase;
     margin-bottom: 14px;
 }
-.section.dark .section-eyebrow {
-    background: rgba(255,255,255,0.10);
-    color: rgba(255,255,255,0.60);
+.hero-h1 {
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    font-size: clamp(36px, 6vw, 64px); font-weight: 600;
+    line-height: 1.07; letter-spacing: -0.28px;
+    color: #fff; max-width: 700px; margin-bottom: 20px;
 }
-.section-title {
-    font-size: clamp(26px, 4vw, 40px); font-weight: 700;
-    line-height: 1.18; letter-spacing: -0.5px; margin-bottom: 14px;
+.hero-h1 span { color: rgba(255,255,255,0.40); }
+.hero-sub {
+    font-size: clamp(16px, 2vw, 21px); font-weight: 400;
+    line-height: 1.47; letter-spacing: -0.374px;
+    color: rgba(255,255,255,0.56); max-width: 560px; margin-bottom: 40px;
 }
-.section.dark .section-title { color: #fff; }
-.section-desc {
-    font-size: 16px; font-weight: 400; letter-spacing: -0.2px;
-    color: var(--label2); line-height: 1.6; margin-bottom: 44px;
-}
-.section.dark .section-desc { color: rgba(255,255,255,0.55); }
-
-/* === 특징 그리드 === */
-.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-.feature-card {
-    background: var(--surface); border-radius: var(--radius-lg);
-    padding: 28px 24px; text-align: center;
-    border: 1px solid var(--separator);
-    box-shadow: var(--shadow-sm);
-    transition: box-shadow 0.2s, transform 0.2s;
-}
-.feature-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
-.feature-icon { font-size: 32px; margin-bottom: 14px; display: block; }
-.feature-name { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 8px; }
-.feature-desc { font-size: 14px; color: var(--label3); line-height: 1.6; letter-spacing: -0.1px; }
-
-/* === 대상자 섹션 === */
-.target-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.target-item {
-    background: var(--surface); border-radius: var(--radius);
-    padding: 16px 20px; display: flex; align-items: center; gap: 12px;
-    border: 1px solid var(--separator); box-shadow: var(--shadow-sm);
-}
-.target-check {
-    width: 22px; height: 22px; border-radius: 50%;
-    background: rgba(0,113,227,0.10); color: var(--blue);
-    font-size: 13px; font-weight: 700;
-    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
-.target-text { font-size: 14px; font-weight: 500; letter-spacing: -0.2px; color: var(--label); }
-
-/* === 가죽별 가격 비교 카드 === */
-.leather-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
-    max-width: 880px; margin: 0 auto;
-}
-.leather-card {
-    background: var(--surface); border-radius: var(--radius-lg);
-    padding: 32px 24px; text-align: center; position: relative;
-    border: 1px solid var(--separator);
-    box-shadow: var(--shadow-sm);
-    transition: box-shadow 0.2s, transform 0.2s;
-}
-.leather-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
-
-/* 추천 카드 — 다크 그라데이션 (한국 앱 프리미엄 강조) */
-.leather-card.featured {
-    background: linear-gradient(145deg, var(--featured-from) 0%, var(--featured-to) 100%);
-    border: 1px solid rgba(41,151,255,0.25);
-    box-shadow: var(--shadow-lg), 0 0 0 1px rgba(41,151,255,0.15);
-    transform: scale(1.04);
-}
-.leather-card.featured:hover { transform: scale(1.06); }
-
-.leather-badge {
-    position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+/* Primary CTA — 8px radius */
+.btn-blue {
     background: var(--blue); color: #fff;
-    font-size: 11px; font-weight: 700; letter-spacing: 0.3px;
-    padding: 4px 14px; border-radius: var(--radius-pill); white-space: nowrap;
+    font-size: 17px; font-weight: 400; letter-spacing: -0.374px;
+    padding: 9px 22px; border-radius: 8px;
+    text-decoration: none; transition: opacity 0.2s;
 }
-.leather-tag {
-    font-size: 11px; font-weight: 600; letter-spacing: 0.5px;
-    text-transform: uppercase; color: var(--label3); margin-bottom: 10px;
+.btn-blue:hover { opacity: 0.86; }
+/* Pill link — 980px */
+.btn-outline {
+    color: var(--blue-dark); font-size: 17px; font-weight: 400; letter-spacing: -0.374px;
+    padding: 8px 20px;
+    border: 1px solid rgba(41,151,255,0.50); border-radius: 980px;
+    text-decoration: none; transition: background 0.2s;
 }
-.leather-card.featured .leather-tag { color: rgba(255,255,255,0.45); }
-.leather-name {
-    font-size: 20px; font-weight: 700; letter-spacing: -0.3px;
+.btn-outline:hover { background: rgba(41,151,255,0.10); }
+
+/* ── 섹션 공통 ────────────────────────────────── */
+.sec { padding: 88px 22px; }
+.sec-black { background: var(--black); }
+.sec-gray  { background: var(--gray); }
+.sec-white { background: var(--white); }
+.inner { max-width: 980px; margin: 0 auto; }
+.eyebrow {
+    font-size: 12px; font-weight: 600; letter-spacing: -0.12px;
+    color: var(--blue); text-transform: uppercase; margin-bottom: 8px;
+}
+.sec-black .eyebrow { color: rgba(255,255,255,0.48); }
+.sec-title {
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    font-size: clamp(28px, 4vw, 48px); font-weight: 600;
+    line-height: 1.07; letter-spacing: -0.28px; margin-bottom: 14px;
+}
+.sec-black .sec-title { color: #fff; }
+.sec-body {
+    font-size: 17px; font-weight: 400; line-height: 1.47; letter-spacing: -0.374px;
+    color: var(--label-s); max-width: 640px; margin-bottom: 52px;
+}
+.sec-black .sec-body { color: rgba(255,255,255,0.56); }
+
+/* ── 캥거루 가죽 — 4개 피처 카드 ─────────────── */
+.kang-intro {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px;
+}
+.kang-card {
+    background: var(--card-dark); border-radius: 12px;
+    padding: 36px 32px;
+}
+.kang-card.wide { grid-column: 1 / -1; }
+.kang-num {
+    font-size: 56px; font-weight: 600; line-height: 1; letter-spacing: -0.28px;
+    color: #fff; margin-bottom: 6px;
+}
+.kang-num-unit {
+    font-size: 20px; font-weight: 400; letter-spacing: -0.374px;
+    color: rgba(255,255,255,0.56);
+}
+.kang-label {
+    font-size: 28px; font-weight: 600; line-height: 1.14; letter-spacing: 0.196px;
+    color: #fff; margin-bottom: 10px;
+}
+.kang-desc {
+    font-size: 17px; font-weight: 400; line-height: 1.47; letter-spacing: -0.374px;
+    color: rgba(255,255,255,0.56);
+}
+.kang-tag {
+    display: inline-block;
+    font-size: 12px; font-weight: 600; letter-spacing: -0.12px;
+    color: var(--blue-dark);
+    background: rgba(41,151,255,0.12); border-radius: 4px;
+    padding: 2px 10px; margin-bottom: 14px;
+}
+
+/* ── 가죽 가격 비교 ────────────────────────────── */
+.price-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+    max-width: 860px; margin: 0 auto;
+}
+.price-card {
+    background: var(--white); border-radius: 12px;
+    padding: 36px 28px; text-align: center; position: relative;
+    box-shadow: var(--shadow);
+}
+.price-card.rec {
+    background: var(--black);
+    box-shadow: rgba(0,0,0,0.44) 3px 8px 40px 0px;
+    transform: scale(1.04); z-index: 2;
+}
+.rec-badge {
+    position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+    background: var(--blue); color: #fff;
+    font-size: 11px; font-weight: 600; letter-spacing: -0.12px;
+    padding: 4px 16px; border-radius: 980px; white-space: nowrap;
+}
+.p-tier {
+    font-size: 12px; font-weight: 600; letter-spacing: -0.12px;
+    color: var(--label-t); text-transform: uppercase; margin-bottom: 8px;
+}
+.price-card.rec .p-tier { color: rgba(255,255,255,0.40); }
+.p-name {
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    font-size: 28px; font-weight: 600; line-height: 1.14; letter-spacing: 0.196px;
     color: var(--label); margin-bottom: 4px;
 }
-.leather-card.featured .leather-name { color: #fff; }
-.leather-sub {
-    font-size: 13px; color: var(--label3); margin-bottom: 20px; line-height: 1.5; letter-spacing: -0.1px;
+.price-card.rec .p-name { color: #fff; }
+.p-sub { font-size: 14px; color: var(--label-t); margin-bottom: 24px; letter-spacing: -0.224px; }
+.price-card.rec .p-sub { color: rgba(255,255,255,0.40); }
+.p-amount {
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    font-size: 52px; font-weight: 600; line-height: 1; letter-spacing: -0.28px;
+    color: var(--label); margin-bottom: 4px;
 }
-.leather-card.featured .leather-sub { color: rgba(255,255,255,0.45); }
-.leather-price {
-    font-size: clamp(34px, 4.5vw, 48px); font-weight: 700;
-    letter-spacing: -1px; line-height: 1;
-    color: var(--label); margin-bottom: 2px;
+.price-card.rec .p-amount { color: #fff; }
+.p-amount small { font-size: 0.38em; font-weight: 400; letter-spacing: 0; vertical-align: 0.5em; }
+.p-unit { font-size: 12px; color: var(--label-t); margin-bottom: 28px; letter-spacing: -0.12px; }
+.price-card.rec .p-unit { color: rgba(255,255,255,0.40); }
+.p-divider { height: 0.5px; background: var(--sep); margin-bottom: 20px; }
+.price-card.rec .p-divider { background: rgba(255,255,255,0.10); }
+.p-list { list-style: none; text-align: left; }
+.p-list li {
+    font-size: 14px; font-weight: 400; letter-spacing: -0.224px;
+    color: var(--label-s); line-height: 1.43;
+    padding: 6px 0; border-bottom: 0.5px solid var(--sep);
+    display: flex; align-items: baseline; gap: 8px;
 }
-.leather-card.featured .leather-price { color: #fff; }
-.leather-price sup {
-    font-size: 0.38em; font-weight: 600; letter-spacing: 0;
-    vertical-align: super; margin-right: 2px;
-}
-.leather-price-unit {
-    font-size: 12px; color: var(--label3); margin-bottom: 20px; letter-spacing: -0.1px;
-}
-.leather-card.featured .leather-price-unit { color: rgba(255,255,255,0.45); }
-.leather-divider { height: 1px; background: var(--separator); margin-bottom: 16px; }
-.leather-card.featured .leather-divider { background: rgba(255,255,255,0.10); }
-.leather-features { list-style: none; text-align: left; }
-.leather-features li {
-    font-size: 13px; color: var(--label2); line-height: 1.6; letter-spacing: -0.1px;
-    padding: 5px 0; display: flex; align-items: flex-start; gap: 8px;
-    border-bottom: 1px solid var(--separator);
-}
-.leather-features li:last-child { border-bottom: none; }
-.leather-card.featured .leather-features li {
-    color: rgba(255,255,255,0.80);
-    border-bottom-color: rgba(255,255,255,0.08);
-}
-.leather-features li::before {
-    content: "✓"; color: var(--blue);
-    font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 2px;
-}
-.leather-card.featured .leather-features li::before { color: var(--blue-dark); }
-.leather-note {
-    margin: 24px auto 0;
-    font-size: 13px; color: var(--label3); line-height: 1.6; letter-spacing: -0.1px;
-    max-width: 880px; text-align: center;
+.p-list li:last-child { border-bottom: none; }
+.price-card.rec .p-list li { color: rgba(255,255,255,0.80); border-bottom-color: rgba(255,255,255,0.08); }
+.p-list li::before { content: "—"; color: var(--blue); font-size: 13px; flex-shrink: 0; }
+.price-card.rec .p-list li::before { color: var(--blue-dark); }
+.price-note {
+    text-align: center; margin-top: 28px;
+    font-size: 14px; font-weight: 400; letter-spacing: -0.224px;
+    color: var(--label-t);
 }
 
-/* === 제작 과정 === */
-.process-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.process-item { text-align: center; }
-.process-num {
-    width: 44px; height: 44px; border-radius: 50%;
-    background: var(--blue); color: #fff;
-    font-size: 17px; font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
-    margin: 0 auto 14px;
+/* ── 베나프로 특징 3열 ─────────────────────────── */
+.feat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.feat-card {
+    background: var(--card-dark); border-radius: 12px;
+    padding: 36px 28px;
 }
-.process-label { font-size: 15px; font-weight: 700; letter-spacing: -0.2px; margin-bottom: 6px; }
-.process-desc { font-size: 13px; color: var(--label3); line-height: 1.6; letter-spacing: -0.1px; }
+.feat-icon { font-size: 36px; margin-bottom: 18px; display: block; }
+.feat-name {
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    font-size: 21px; font-weight: 700; line-height: 1.19; letter-spacing: 0.231px;
+    color: #fff; margin-bottom: 10px;
+}
+.feat-desc {
+    font-size: 17px; font-weight: 400; line-height: 1.47; letter-spacing: -0.374px;
+    color: rgba(255,255,255,0.56);
+}
 
-/* === FAQ — iOS 그룹 테이블 스타일 === */
-.faq-list { display: flex; flex-direction: column; gap: 1px; border-radius: var(--radius); overflow: hidden; }
-.faq-item { background: var(--surface); }
-.faq-item:first-child { border-radius: var(--radius) var(--radius) 0 0; }
-.faq-item:last-child  { border-radius: 0 0 var(--radius) var(--radius); }
+/* ── 추천 대상 ────────────────────────────────── */
+.target-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.target-item {
+    background: var(--white); border-radius: 12px;
+    padding: 20px 24px; display: flex; align-items: flex-start; gap: 14px;
+    box-shadow: var(--shadow);
+}
+.target-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--blue); flex-shrink: 0; margin-top: 8px;
+}
+.target-text {
+    font-size: 17px; font-weight: 400; line-height: 1.47; letter-spacing: -0.374px;
+    color: var(--label);
+}
+
+/* ── 제작 과정 ─────────────────────────────────── */
+.process-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.proc-card {
+    background: var(--card-d2); border-radius: 12px;
+    padding: 28px 22px; text-align: center;
+}
+.proc-num {
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    font-size: 40px; font-weight: 600; line-height: 1; letter-spacing: -0.28px;
+    color: rgba(255,255,255,0.20); margin-bottom: 14px;
+}
+.proc-name {
+    font-size: 17px; font-weight: 600; letter-spacing: -0.374px;
+    color: #fff; margin-bottom: 8px;
+}
+.proc-desc {
+    font-size: 14px; font-weight: 400; letter-spacing: -0.224px;
+    color: rgba(255,255,255,0.48); line-height: 1.43;
+}
+
+/* ── FAQ ──────────────────────────────────────── */
+.faq-wrap { max-width: 720px; margin: 0 auto; }
+.faq-item { background: var(--white); border-radius: 12px; overflow: hidden; margin-bottom: 4px; }
 .faq-q {
     width: 100%; text-align: left; background: none; border: none; cursor: pointer;
-    padding: 18px 20px;
-    font-size: 15px; font-weight: 600; letter-spacing: -0.2px; color: var(--label);
-    display: flex; align-items: center; justify-content: space-between; gap: 12px;
-    border-bottom: 1px solid var(--separator);
+    padding: 20px 24px; gap: 16px;
+    font-size: 17px; font-weight: 400; letter-spacing: -0.374px; color: var(--label);
+    display: flex; align-items: center; justify-content: space-between;
+    box-shadow: var(--shadow);
 }
-.faq-item.open .faq-q { border-bottom-color: transparent; }
-.faq-arrow { transition: transform 0.2s; flex-shrink: 0; font-size: 12px; color: var(--label3); }
-.faq-item.open .faq-arrow { transform: rotate(180deg); }
+.faq-arr { flex-shrink: 0; font-size: 11px; color: var(--label-t); transition: transform 0.22s; }
+.faq-item.open .faq-arr { transform: rotate(180deg); }
 .faq-a {
     display: none;
-    padding: 14px 20px 18px;
-    font-size: 14px; color: var(--label2); line-height: 1.65; letter-spacing: -0.1px;
-    background: #fafafe;
+    padding: 0 24px 20px;
+    font-size: 17px; font-weight: 400; letter-spacing: -0.374px;
+    color: var(--label-s); line-height: 1.47;
+    border-top: 0.5px solid var(--sep);
+    padding-top: 16px;
 }
 .faq-item.open .faq-a { display: block; }
 
-/* === CTA === */
-.cta-block {
-    background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
-    border-radius: var(--radius-lg);
-    border: 1px solid rgba(41,151,255,0.20);
-    padding: 52px 36px; text-align: center; margin: 0 auto; max-width: 680px;
-    box-shadow: var(--shadow-lg);
+/* ── CTA 최하단 ────────────────────────────────── */
+.cta-wrap {
+    max-width: 680px; margin: 0 auto; text-align: center;
 }
 .cta-title {
-    font-size: clamp(22px, 3.5vw, 34px); font-weight: 700;
-    letter-spacing: -0.5px; line-height: 1.18;
-    color: #fff; margin-bottom: 12px;
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    font-size: clamp(28px, 4vw, 48px); font-weight: 600;
+    line-height: 1.07; letter-spacing: -0.28px;
+    color: #fff; margin-bottom: 16px;
 }
-.cta-desc {
-    font-size: 15px; color: rgba(255,255,255,0.55); margin-bottom: 28px; line-height: 1.6; letter-spacing: -0.1px;
+.cta-sub {
+    font-size: 17px; font-weight: 400; line-height: 1.47; letter-spacing: -0.374px;
+    color: rgba(255,255,255,0.56); margin-bottom: 36px;
 }
-.cta-btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-.btn-kakao-copy {
+.cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn-kakao {
     display: inline-flex; align-items: center; gap: 8px;
     background: #FEE500; color: #3C1E1E;
-    font-size: 15px; font-weight: 700;
-    padding: 12px 24px; border-radius: var(--radius-pill);
-    border: none; cursor: pointer; transition: opacity 0.18s;
+    font-size: 17px; font-weight: 400; letter-spacing: -0.374px;
+    padding: 9px 22px; border-radius: 8px;
+    border: none; cursor: pointer; transition: opacity 0.2s; text-decoration: none;
 }
-.btn-kakao-copy:hover { opacity: 0.88; }
-.copy-feedback { display: none; margin-top: 12px; font-size: 13px; color: var(--green); font-weight: 600; }
+.btn-kakao:hover { opacity: 0.88; }
+.copy-msg { display: none; margin-top: 14px; font-size: 14px; color: var(--green); font-weight: 600; letter-spacing: -0.224px; }
 
-/* === 푸터 === */
+/* ── 푸터 ─────────────────────────────────────── */
 .footer {
-    padding: 36px 24px; text-align: center;
-    font-size: 12px; color: var(--label3); line-height: 1.7; letter-spacing: -0.1px;
-    border-top: 1px solid var(--separator);
+    padding: 40px 22px; text-align: center;
+    background: var(--gray);
+    font-size: 12px; font-weight: 400; letter-spacing: -0.12px;
+    color: var(--label-t); line-height: 1.33;
+    border-top: 0.5px solid var(--sep);
 }
-.footer a { color: var(--label2); text-decoration: none; }
+.footer a { color: var(--label-s); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
 
-/* === 스크롤 애니메이션 === */
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
-.reveal.visible { opacity: 1; transform: translateY(0); }
-.reveal-d1 { transition-delay: 0.06s; }
-.reveal-d2 { transition-delay: 0.13s; }
-.reveal-d3 { transition-delay: 0.20s; }
+/* ── 스크롤 reveal ─────────────────────────────── */
+.rv { opacity: 0; transform: translateY(28px); transition: opacity 0.58s ease, transform 0.58s ease; }
+.rv.on { opacity: 1; transform: translateY(0); }
+.d1 { transition-delay: 0.06s; }
+.d2 { transition-delay: 0.13s; }
+.d3 { transition-delay: 0.20s; }
+.d4 { transition-delay: 0.27s; }
 
-/* === 반응형 === */
-@media (max-width: 640px) {
-    .hero { padding: 100px 20px 60px; min-height: 400px; }
-    .hero h1 { font-size: 30px; }
-    .section { padding: 56px 20px; }
-    .feature-grid { grid-template-columns: 1fr; gap: 10px; }
-    .target-list { grid-template-columns: 1fr; }
-    .process-row { grid-template-columns: 1fr 1fr; gap: 14px; }
-    .leather-grid { grid-template-columns: 1fr; gap: 12px; }
-    .leather-card.featured { transform: none; }
-    .leather-card.featured:hover { transform: none; }
-    .cta-block { padding: 36px 20px; }
+/* ── 반응형 ────────────────────────────────────── */
+@media (max-width: 680px) {
+    .hero { padding: 96px 20px 68px; min-height: 420px; }
+    .sec { padding: 60px 20px; }
+    .kang-intro { grid-template-columns: 1fr; }
+    .kang-card.wide { grid-column: auto; }
+    .price-grid { grid-template-columns: 1fr; }
+    .price-card.rec { transform: none; }
+    .feat-grid { grid-template-columns: 1fr; }
+    .target-grid { grid-template-columns: 1fr; }
+    .process-row { grid-template-columns: 1fr 1fr; }
+    .hero-btns { flex-direction: column; align-items: center; }
+    .cta-btns  { flex-direction: column; align-items: center; }
 }
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav class="nav">
     <a href="/" class="nav-logo">LEE&amp;YANG</a>
-    <a href="/apply.php" class="nav-cta">제작 신청하기</a>
+    <a href="/changalyi.php" class="nav-back">&#8249; 창갈이 수선</a>
+    <a href="/apply.php" class="nav-cta">신청하기</a>
 </nav>
 
+<!-- ① HERO -->
 <section class="hero">
-    <p class="hero-eyebrow">리앤양 맞춤 축구화</p>
-    <h1>세상에 하나뿐인<br><em>나만의 맞춤 축구화</em></h1>
-    <p class="hero-sub">내 발형 그대로 수제 제작. 발볼 넓은 분, 무지외반증, 특수 발형 모두 가능.<br>색상·소재·디자인 직접 선택, 2주 완성.</p>
-    <span class="price-badge">베나프로 맞춤 축구화 — 35만원~</span>
-    <a href="/apply.php" class="btn-primary">지금 제작 신청하기</a>
+    <p class="hero-eyebrow">리앤양 베나프로 맞춤 축구화</p>
+    <h1 class="hero-h1">내 발을 위해<br>처음부터 만드는<br><span>유일한 축구화.</span></h1>
+    <p class="hero-sub">발볼·발등·발길이를 실측해 손으로 한 켤레씩 제작합니다.<br>세상에 단 하나, 오직 내 발만을 위한 맞춤 수제 축구화.</p>
+    <div class="hero-btns">
+        <a href="/apply.php" class="btn-blue">지금 제작 신청하기</a>
+        <a href="#kanguro" class="btn-outline">캥거루 가죽이란? ›</a>
+    </div>
 </section>
 
-<!-- 특징 -->
-<section class="section white">
-    <div class="section-inner">
-        <p class="section-eyebrow reveal">맞춤 제작 특징</p>
-        <h2 class="section-title reveal reveal-d1">기성품이 맞지 않는 분들을 위한<br>완전한 맞춤 제작</h2>
-        <p class="section-desc reveal reveal-d2">발형 실측부터 소재 선택, 핸드메이드 제작까지. 오직 하나뿐인 내 발을 위한 축구화를 만들어드립니다.</p>
-        <div class="feature-grid">
-            <div class="feature-card reveal reveal-d1">
-                <span class="feature-icon">📐</span>
-                <div class="feature-name">발형 실측 맞춤</div>
-                <div class="feature-desc">발 길이, 발볼 너비, 발등 높이를 정밀 측정해 딱 맞게 제작합니다.</div>
+<!-- ② 캥거루 가죽 -->
+<section class="sec sec-black" id="kanguro">
+    <div class="inner">
+        <p class="eyebrow rv">소재</p>
+        <h2 class="sec-title rv d1">세계 최상급 축구화 가죽,<br>캥거루 가죽을 권장하는 이유.</h2>
+        <p class="sec-body rv d2">나이키 Tiempo Legend Elite, 아디다스 Copa Mundial. 세계 정상급 축구화가 선택한 소재가 캥거루 가죽입니다. 리앤양 베나프로에서도 가장 많이 선택되는 어퍼 소재입니다.</p>
+        <div class="kang-intro rv d2">
+            <div class="kang-card">
+                <div class="kang-tag">강도</div>
+                <div class="kang-num">3<span class="kang-num-unit">배</span></div>
+                <div class="kang-label">같은 두께, 3배 강하다</div>
+                <div class="kang-desc">캥거루 가죽은 단위 두께당 인장 강도가 소가죽의 약 3배입니다. 얇게 가공해도 찢어지지 않아, 더 가볍고 얇은 어퍼를 만들 수 있습니다. 볼 터치의 민감도가 높아지고 착화감이 극적으로 좋아집니다.</div>
             </div>
-            <div class="feature-card reveal reveal-d2">
-                <span class="feature-icon">🎨</span>
-                <div class="feature-name">색상·소재 선택</div>
-                <div class="feature-desc">어퍼 색상, 밑창 색상, 소재를 직접 선택해 나만의 디자인으로 완성합니다.</div>
+            <div class="kang-card">
+                <div class="kang-tag">착화감</div>
+                <div class="kang-num">2~3<span class="kang-num-unit">시간</span></div>
+                <div class="kang-label">빠르게 발에 길든다</div>
+                <div class="kang-desc">섬유 구조가 유연하고 촘촘해 2~3시간 착용만으로 발형에 맞게 변형됩니다. 맞춤 제작된 라스트(틀) 위에서 제작되기 때문에, 캥거루 가죽을 사용할 때 이 효과가 극대화됩니다.</div>
             </div>
-            <div class="feature-card reveal reveal-d3">
-                <span class="feature-icon">🏭</span>
-                <div class="feature-name">핸드메이드 수제 제작</div>
-                <div class="feature-desc">공장 대량생산이 아닌 장인이 직접 손으로 한 켤레 한 켤레 제작합니다.</div>
+            <div class="kang-card wide">
+                <div class="kang-tag">소재 비교</div>
+                <div class="kang-label">인조가죽 · 소가죽 · 캥거루 가죽</div>
+                <div class="kang-desc" style="margin-top:12px;">인조가죽은 내구성이 낮고 발에 잘 길들지 않습니다. 소가죽은 천연가죽의 착화감을 주지만 두꺼워 볼 터치가 무뎌집니다. 캥거루 가죽은 얇고 강하면서 유연해, 맞춤 제작 축구화의 성능을 가장 잘 살려주는 소재입니다. 대부분의 고객이 경험 후 캥거루 가죽을 다시 선택합니다.</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 이런 분께 추천 -->
-<section class="section gray">
-    <div class="section-inner">
-        <p class="section-eyebrow reveal">추천 대상</p>
-        <h2 class="section-title reveal reveal-d1">이런 분들께 꼭 맞습니다</h2>
-        <ul class="target-list reveal reveal-d2">
-            <li class="target-item">
-                <span class="target-check">✓</span>
-                <span class="target-text">발볼이 넓어 기성품 축구화가 불편한 분</span>
-            </li>
-            <li class="target-item">
-                <span class="target-check">✓</span>
-                <span class="target-text">무지외반증·소건막류 등 발 변형이 있는 분</span>
-            </li>
-            <li class="target-item">
-                <span class="target-check">✓</span>
-                <span class="target-text">발 좌우 사이즈가 달라 맞는 신발이 없는 분</span>
-            </li>
-            <li class="target-item">
-                <span class="target-check">✓</span>
-                <span class="target-text">나만의 색상·디자인으로 특별하게 갖고 싶은 분</span>
-            </li>
-            <li class="target-item">
-                <span class="target-check">✓</span>
-                <span class="target-text">발 사이즈가 시중 제품 범위(220~290mm)를 벗어난 분</span>
-            </li>
-            <li class="target-item">
-                <span class="target-check">✓</span>
-                <span class="target-text">경기력·편안함을 동시에 원하는 선수·동호인</span>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<!-- 가격 -->
-<section class="section white">
-    <div class="section-inner">
-        <p class="section-eyebrow reveal" style="text-align:center;">가격</p>
-        <h2 class="section-title reveal reveal-d1" style="text-align:center;">어퍼 소재에 따라<br>선택하세요</h2>
-        <p class="section-desc reveal reveal-d2" style="text-align:center;">세 가지 가죽 중 하나를 선택. 발형 실측, 색상·스터드 커스터마이징, 수제 제작, 전국 배송 모두 포함.</p>
-        <div class="leather-grid reveal reveal-d2">
+<!-- ③ 가격 비교 -->
+<section class="sec sec-gray" id="price">
+    <div class="inner">
+        <p class="eyebrow rv" style="text-align:center;">가격</p>
+        <h2 class="sec-title rv d1" style="text-align:center;">어퍼 소재를 선택하세요</h2>
+        <p class="sec-body rv d2" style="text-align:center;margin-left:auto;margin-right:auto;">발형 실측, 색상·스터드 커스터마이징, 수제 제작, 전국 배송 모두 포함된 가격입니다.</p>
+        <div class="price-grid rv d2">
 
             <!-- 인조가죽 -->
-            <div class="leather-card">
-                <div class="leather-tag">Basic</div>
-                <div class="leather-name">인조가죽</div>
-                <div class="leather-sub">합성 소재 어퍼</div>
-                <div class="leather-price"><sup>₩</sup>35<span style="font-size:0.42em;font-weight:600;letter-spacing:0;vertical-align:baseline;margin-left:2px">만원</span></div>
-                <div class="leather-price-unit">VAT 포함 · 배송비 포함</div>
-                <div class="leather-divider"></div>
-                <ul class="leather-features">
+            <div class="price-card">
+                <div class="p-tier">Basic</div>
+                <div class="p-name">인조가죽</div>
+                <div class="p-sub">합성 어퍼</div>
+                <div class="p-amount"><small>₩</small>35<small style="font-size:0.38em;vertical-align:baseline">만원</small></div>
+                <div class="p-unit">VAT 포함 · 전국 배송 포함</div>
+                <div class="p-divider"></div>
+                <ul class="p-list">
                     <li>합성 소재 어퍼</li>
                     <li>FG/AG 겸용 아웃솔</li>
                     <li>발형 실측 맞춤 제작</li>
-                    <li>색상·스터드 선택 가능</li>
+                    <li>색상·스터드 선택</li>
                 </ul>
             </div>
 
             <!-- 캥거루 가죽 (추천) -->
-            <div class="leather-card featured">
-                <div class="leather-badge">추천 · 가장 많이 선택</div>
-                <div class="leather-tag">Premium</div>
-                <div class="leather-name">캥거루 가죽</div>
-                <div class="leather-sub">세계 최상급 천연가죽</div>
-                <div class="leather-price"><sup>₩</sup>45<span style="font-size:0.42em;font-weight:600;letter-spacing:0;vertical-align:baseline;margin-left:2px">만원</span></div>
-                <div class="leather-price-unit">VAT 포함 · 배송비 포함</div>
-                <div class="leather-divider"></div>
-                <ul class="leather-features">
+            <div class="price-card rec">
+                <div class="rec-badge">추천 · 가장 많이 선택</div>
+                <div class="p-tier">Premium</div>
+                <div class="p-name">캥거루 가죽</div>
+                <div class="p-sub">세계 최상급 천연가죽</div>
+                <div class="p-amount"><small>₩</small>45<small style="font-size:0.38em;vertical-align:baseline">만원</small></div>
+                <div class="p-unit">VAT 포함 · 전국 배송 포함</div>
+                <div class="p-divider"></div>
+                <ul class="p-list">
                     <li>캥거루 천연가죽 어퍼</li>
-                    <li>소가죽 대비 얇고 강한 내구성</li>
-                    <li>발에 빠르게 길드는 착화감</li>
-                    <li>FG/AG/SG 아웃솔 선택 가능</li>
+                    <li>소가죽 대비 얇고 3배 강함</li>
+                    <li>2~3시간 내 발에 길듦</li>
+                    <li>FG/AG/SG 아웃솔 선택</li>
                     <li>발형 실측 맞춤 제작</li>
-                    <li>색상·스터드 선택 가능</li>
+                    <li>색상·스터드 선택</li>
                 </ul>
             </div>
 
             <!-- 소가죽 -->
-            <div class="leather-card">
-                <div class="leather-tag">Standard</div>
-                <div class="leather-name">소가죽</div>
-                <div class="leather-sub">천연 카프스킨 어퍼</div>
-                <div class="leather-price"><sup>₩</sup>40<span style="font-size:0.42em;font-weight:600;letter-spacing:0;vertical-align:baseline;margin-left:2px">만원</span></div>
-                <div class="leather-price-unit">VAT 포함 · 배송비 포함</div>
-                <div class="leather-divider"></div>
-                <ul class="leather-features">
-                    <li>천연 소가죽(카프스킨) 어퍼</li>
-                    <li>FG/AG/SG 아웃솔 선택 가능</li>
+            <div class="price-card">
+                <div class="p-tier">Standard</div>
+                <div class="p-name">소가죽</div>
+                <div class="p-sub">천연 카프스킨</div>
+                <div class="p-amount"><small>₩</small>40<small style="font-size:0.38em;vertical-align:baseline">만원</small></div>
+                <div class="p-unit">VAT 포함 · 전국 배송 포함</div>
+                <div class="p-divider"></div>
+                <ul class="p-list">
+                    <li>천연 소가죽 어퍼</li>
+                    <li>FG/AG/SG 아웃솔 선택</li>
                     <li>발형 실측 맞춤 제작</li>
-                    <li>색상·스터드 선택 가능</li>
+                    <li>색상·스터드 선택</li>
                 </ul>
             </div>
 
         </div>
-        <p class="leather-note reveal">가죽 종류와 색상·스터드 조합은 상담 후 결정합니다. 궁금한 점은 카카오톡 <strong>21apro</strong>로 언제든지 문의해 주세요.</p>
+        <p class="price-note rv">색상·스터드 조합은 상담 후 결정합니다. 궁금한 점은 카카오톡 <strong>21apro</strong>로 문의해 주세요.</p>
     </div>
 </section>
 
-<!-- 제작 과정 -->
-<section class="section gray">
-    <div class="section-inner">
-        <p class="section-eyebrow reveal">제작 과정</p>
-        <h2 class="section-title reveal reveal-d1">4단계로 완성되는<br>나만의 축구화</h2>
-        <div class="process-row reveal reveal-d2">
-            <div class="process-item">
-                <div class="process-num">1</div>
-                <div class="process-label">상담·견적</div>
-                <div class="process-desc">카카오톡으로 발 사진 전송,<br>발형·디자인 상담</div>
+<!-- ④ 베나프로 특징 -->
+<section class="sec sec-black">
+    <div class="inner">
+        <p class="eyebrow rv">베나프로 특징</p>
+        <h2 class="sec-title rv d1">기성화가 맞지 않는 이유가 있습니다.</h2>
+        <p class="sec-body rv d2">대량 생산 축구화는 평균 발형 기준으로 만들어집니다. 베나프로는 당신의 발형 데이터만을 기준으로 처음부터 다시 만듭니다.</p>
+        <div class="feat-grid rv d2">
+            <div class="feat-card">
+                <span class="feat-icon">📐</span>
+                <div class="feat-name">발형 실측 제작</div>
+                <div class="feat-desc">발 길이·너비·발등 높이·아치 곡률까지 정밀 측정합니다. 방문 측정 또는 족적지 우편 발송 모두 가능합니다.</div>
             </div>
-            <div class="process-item">
-                <div class="process-num">2</div>
-                <div class="process-label">발형 측정</div>
-                <div class="process-desc">방문 또는 발 족적지<br>우편 발송으로 정밀 측정</div>
+            <div class="feat-card">
+                <span class="feat-icon">🎨</span>
+                <div class="feat-name">색상·스터드 선택</div>
+                <div class="feat-desc">어퍼 색상, 스터드 패턴(15종), 아웃솔 타입(FG/AG/SG)을 직접 선택합니다. 세상에 하나뿐인 나만의 디자인.</div>
             </div>
-            <div class="process-item">
-                <div class="process-num">3</div>
-                <div class="process-label">수제 제작</div>
-                <div class="process-desc">장인이 직접 한 켤레씩<br>핸드메이드 제작 (2주~)</div>
-            </div>
-            <div class="process-item">
-                <div class="process-num">4</div>
-                <div class="process-label">배송·완료</div>
-                <div class="process-desc">전국 택배 발송,<br>착용 후 피팅 상담</div>
+            <div class="feat-card">
+                <span class="feat-icon">🏭</span>
+                <div class="feat-name">한 켤레씩 수작업</div>
+                <div class="feat-desc">공장 대량 생산이 아닌 장인이 직접 제작합니다. 라스트(틀)를 발형에 맞게 커스텀해 착화감을 극대화합니다.</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- FAQ -->
-<section class="section white">
-    <div class="section-inner">
-        <p class="section-eyebrow reveal">FAQ</p>
-        <h2 class="section-title reveal reveal-d1">자주 묻는 질문</h2>
-        <div class="faq-list reveal reveal-d2">
+<!-- ⑤ 추천 대상 -->
+<section class="sec sec-white">
+    <div class="inner">
+        <p class="eyebrow rv">추천 대상</p>
+        <h2 class="sec-title rv d1">이런 분들을 위해 만들었습니다.</h2>
+        <p class="sec-body rv d2">기성 축구화가 불편한 데는 이유가 있습니다. 발형 문제라면 맞춤 제작이 유일한 해답입니다.</p>
+        <div class="target-grid rv d2">
+            <div class="target-item">
+                <div class="target-dot"></div>
+                <span class="target-text">발볼이 넓어 기성 축구화가 꽉 끼거나 발가락이 눌리는 분</span>
+            </div>
+            <div class="target-item">
+                <div class="target-dot"></div>
+                <span class="target-text">무지외반증·소건막류 등 발 변형으로 신발 선택이 어려운 분</span>
+            </div>
+            <div class="target-item">
+                <div class="target-dot"></div>
+                <span class="target-text">발 좌우 사이즈가 달라 항상 한쪽이 맞지 않는 분</span>
+            </div>
+            <div class="target-item">
+                <div class="target-dot"></div>
+                <span class="target-text">220mm 이하 또는 295mm 이상의 특수 사이즈가 필요한 분</span>
+            </div>
+            <div class="target-item">
+                <div class="target-dot"></div>
+                <span class="target-text">발등이 높거나 낮아 기성화 착용 시 발이 빠지거나 조이는 분</span>
+            </div>
+            <div class="target-item">
+                <div class="target-dot"></div>
+                <span class="target-text">나만의 색상·디자인으로 특별한 축구화를 갖고 싶은 선수·동호인</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ⑥ 제작 과정 -->
+<section class="sec sec-black">
+    <div class="inner">
+        <p class="eyebrow rv">제작 과정</p>
+        <h2 class="sec-title rv d1">4단계로 완성됩니다.</h2>
+        <p class="sec-body rv d2">카카오톡 상담부터 배송까지. 복잡한 절차 없이 진행됩니다.</p>
+        <div class="process-row rv d2">
+            <div class="proc-card">
+                <div class="proc-num">01</div>
+                <div class="proc-name">상담·견적</div>
+                <div class="proc-desc">카카오톡 21apro로 발 사진 전송, 원하는 소재·색상·스터드 상담. 24시간 가능.</div>
+            </div>
+            <div class="proc-card">
+                <div class="proc-num">02</div>
+                <div class="proc-name">발형 측정</div>
+                <div class="proc-desc">경기도 고양시 직접 방문 또는 족적지 우편 발송. 발 전체 치수를 정밀 측정.</div>
+            </div>
+            <div class="proc-card">
+                <div class="proc-num">03</div>
+                <div class="proc-name">수제 제작</div>
+                <div class="proc-desc">발형 데이터로 라스트 커스텀 후 장인이 직접 수작업 제작. 2~4주 소요.</div>
+            </div>
+            <div class="proc-card">
+                <div class="proc-num">04</div>
+                <div class="proc-name">배송·피팅</div>
+                <div class="proc-desc">전국 택배 발송 완료 후 착용감 피팅 상담. 간단한 수선도 상담 가능.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ⑦ FAQ -->
+<section class="sec sec-gray">
+    <div class="inner">
+        <p class="eyebrow rv" style="text-align:center;">FAQ</p>
+        <h2 class="sec-title rv d1" style="text-align:center;margin-bottom:40px;">자주 묻는 질문</h2>
+        <div class="faq-wrap rv d2">
+
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">
-                    맞춤 축구화 가격이 얼마인가요?
-                    <span class="faq-arrow">▼</span>
+                    가격이 어떻게 되나요?
+                    <span class="faq-arr">▼</span>
                 </button>
-                <div class="faq-a">
-                    어퍼 소재에 따라 다릅니다. <strong>인조가죽 350,000원 / 소가죽 400,000원 / 캥거루 가죽 450,000원</strong>. 발형 실측, 색상·스터드 커스터마이징, 수제 제작, 전국 배송 모두 포함. 대부분의 고객은 착화감과 내구성이 탁월한 캥거루 가죽을 선택합니다.
-                </div>
+                <div class="faq-a">어퍼 소재에 따라 다릅니다. <strong>인조가죽 35만원 / 소가죽 40만원 / 캥거루 가죽 45만원</strong>이며, 모두 발형 실측·색상 커스터마이징·수제 제작·전국 배송이 포함된 가격입니다. 대부분의 고객은 착화감과 내구성이 월등한 캥거루 가죽을 선택합니다.</div>
             </div>
+
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">
-                    발 사진만으로도 제작이 가능한가요?
-                    <span class="faq-arrow">▼</span>
+                    왜 캥거루 가죽이 더 좋은가요?
+                    <span class="faq-arr">▼</span>
                 </button>
-                <div class="faq-a">
-                    카카오톡으로 발 사진(위·옆·앞·뒤)을 보내주시면 기본 상담이 가능합니다. 더 정확한 제작을 위해서는 <strong>방문 측정</strong>을 권장하며, 방문이 어려운 분은 족적지를 우편으로 보내주시는 방법도 있습니다.
-                </div>
+                <div class="faq-a">캥거루 가죽은 단위 두께당 인장 강도가 소가죽의 약 3배입니다. 얇게 가공해도 내구성이 유지되어 볼 터치 민감도가 높아집니다. 또한 섬유 조직이 유연해 2~3시간 착용만으로 발형에 맞게 길들어, 맞춤 제작과 시너지가 매우 큽니다. 나이키 Tiempo Legend Elite, 아디다스 Copa Mundial 등 세계 최상위 모델이 이 소재를 사용하는 이유입니다.</div>
             </div>
+
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    발 사진만으로 제작 가능한가요?
+                    <span class="faq-arr">▼</span>
+                </button>
+                <div class="faq-a">카카오톡으로 발 사진(위·옆·앞·뒤)을 보내주시면 기초 상담이 가능합니다. 더 정확한 제작을 위해 <strong>방문 측정</strong>을 권장하며, 방문이 어려운 분은 족적지를 우편으로 보내주시는 방법도 있습니다. 방문 주소: 경기도 고양시 덕양구 서오릉로 433 한우만 3층.</div>
+            </div>
+
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">
                     제작 기간이 얼마나 걸리나요?
-                    <span class="faq-arrow">▼</span>
+                    <span class="faq-arr">▼</span>
                 </button>
-                <div class="faq-a">보통 <strong>2주에서 1개월</strong> 정도 소요됩니다. 주문량에 따라 달라질 수 있으며, 상담 시 예상 기간을 정확히 안내해드립니다.</div>
+                <div class="faq-a">보통 <strong>2주에서 4주</strong> 소요됩니다. 주문 현황에 따라 달라질 수 있으며, 상담 시 예상 기간을 정확히 안내드립니다.</div>
             </div>
+
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">
-                    어떤 발형도 제작이 가능한가요?
-                    <span class="faq-arrow">▼</span>
+                    어떤 발형도 제작 가능한가요?
+                    <span class="faq-arr">▼</span>
                 </button>
-                <div class="faq-a">
-                    발볼이 넓거나 좁은 분, 무지외반증·소건막류 등 발 변형이 있는 분, 발 좌우 사이즈가 다른 분, 220mm 이하 또는 295mm 이상의 특수 사이즈 등 <strong>대부분의 발형 제작이 가능</strong>합니다. 먼저 카카오톡으로 상담해주세요.
-                </div>
+                <div class="faq-a">발볼 넓음·무지외반증·짝발·특수 사이즈(220mm 이하, 295mm 이상) 등 <strong>대부분의 발형 제작이 가능</strong>합니다. 먼저 카카오톡으로 발 사진과 함께 상담해 주세요.</div>
             </div>
+
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">
-                    직접 방문해야 하나요?
-                    <span class="faq-arrow">▼</span>
+                    스터드(아웃솔)는 어떻게 선택하나요?
+                    <span class="faq-arr">▼</span>
                 </button>
-                <div class="faq-a">방문이 권장되지만 필수는 아닙니다. <strong>전국 어디서나</strong> 족적지 우편 발송 방식으로 제작이 가능합니다. 카카오톡 21apro로 먼저 상담해주세요.<br><br>방문 주소: 경기도 고양시 덕양구 서오릉로 433 한우만 3층 (리앤양)</div>
+                <div class="faq-a">Stud 03번~15번, 총 15가지 패턴 중 선택 가능합니다. 천연 잔디(FG), 인공 잔디(AG), 연식 잔디(SG) 등 주로 사용하는 경기장 환경에 맞춰 상담 후 결정합니다. 스터드 선택에 따른 추가 비용은 없습니다.</div>
             </div>
+
         </div>
     </div>
 </section>
 
-<!-- CTA -->
-<section class="section gray">
-    <div class="section-inner">
-        <div class="cta-block reveal">
-            <div class="cta-title">지금 바로 시작하세요</div>
-            <div class="cta-desc">카카오톡 상담 또는 온라인 신청서 작성으로 간편하게 시작.<br>발 사진 한 장으로 무료 상담·견적 가능합니다.</div>
-            <div class="cta-btn-row">
-                <a href="/apply.php" class="btn-primary">신청서 작성하기</a>
-                <button class="btn-kakao-copy" onclick="copyKakaoId()">
+<!-- ⑧ CTA -->
+<section class="sec sec-black">
+    <div class="inner">
+        <div class="cta-wrap rv">
+            <p class="hero-eyebrow" style="margin-bottom:14px;">지금 시작하세요</p>
+            <h2 class="cta-title">발 사진 한 장으로<br>무료 상담·견적.</h2>
+            <p class="cta-sub">카카오톡 21apro로 발 사진을 보내주시면<br>소재·색상·스터드 상담과 견적을 바로 드립니다.</p>
+            <div class="cta-btns">
+                <a href="/apply.php" class="btn-blue">신청서 작성하기</a>
+                <button class="btn-kakao" onclick="copyKakao()">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1.5C4.86 1.5 1.5 4.14 1.5 7.38c0 2.04 1.2 3.84 3.03 4.92l-.75 2.79 3.21-2.1c.66.12 1.32.18 2.01.18 4.14 0 7.5-2.64 7.5-5.88S13.14 1.5 9 1.5z" fill="#3C1E1E"/></svg>
                     카카오톡 21apro
                 </button>
             </div>
-            <div class="copy-feedback" id="copyFeedback">아이디가 복사됐습니다. 카카오톡에서 21apro를 검색하세요.</div>
+            <div class="copy-msg" id="copyMsg">아이디가 복사됐습니다. 카카오톡에서 21apro를 검색해 주세요.</div>
         </div>
     </div>
 </section>
 
 <footer class="footer">
-    <div>리앤양 Lee &amp; Yang | 경기도 고양시 덕양구 서오릉로 433 한우만 3층</div>
-    <div>Tel: 010-3547-7744 | 카카오톡: 21apro</div>
-    <div style="margin-top:8px">
+    <div>리앤양 Lee &amp; Yang &nbsp;|&nbsp; 경기도 고양시 덕양구 서오릉로 433 한우만 3층</div>
+    <div style="margin-top:4px;">Tel: 010-3547-7744 &nbsp;|&nbsp; 카카오톡: 21apro &nbsp;|&nbsp; 우리은행 578-224027-02-003 (이주용)</div>
+    <div style="margin-top:10px;">
         <a href="/">홈</a> &nbsp;·&nbsp;
         <a href="/changalyi.php">창갈이 수선</a> &nbsp;·&nbsp;
         <a href="/apply.php">신청하기</a>
@@ -656,42 +706,39 @@ body {
 
 <script>
 function toggleFaq(btn) {
-    var item = btn.closest('.faq-item');
-    item.classList.toggle('open');
+    btn.closest('.faq-item').classList.toggle('open');
 }
 
-function copyKakaoId() {
+function copyKakao() {
     var id = '21apro';
     if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(id).then(showFeedback);
+        navigator.clipboard.writeText(id).then(showMsg);
     } else {
-        var ta = document.createElement('textarea');
-        ta.value = id; ta.style.position = 'fixed'; ta.style.opacity = '0';
-        document.body.appendChild(ta); ta.focus(); ta.select();
+        var t = document.createElement('textarea');
+        t.value = id; t.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(t); t.focus(); t.select();
         try { document.execCommand('copy'); } catch(e) {}
-        document.body.removeChild(ta);
-        showFeedback();
+        document.body.removeChild(t); showMsg();
     }
 }
-
-function showFeedback() {
-    var el = document.getElementById('copyFeedback');
+function showMsg() {
+    var el = document.getElementById('copyMsg');
     el.style.display = 'block';
-    setTimeout(function() { el.style.display = 'none'; }, 3500);
+    setTimeout(function(){ el.style.display = 'none'; }, 3500);
 }
 
 (function() {
-    var els = document.querySelectorAll('.reveal');
+    var els = document.querySelectorAll('.rv');
     if (!els.length) return;
     if ('IntersectionObserver' in window) {
-        var obs = new IntersectionObserver(function(entries) {
+        var io = new IntersectionObserver(function(entries) {
             entries.forEach(function(e) {
-                if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+                if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
             });
-        }, { threshold: 0.1 });
-        els.forEach(function(el) { obs.observe(el); });
+        }, { threshold: 0.08 });
+        els.forEach(function(el) { io.observe(el); });
     } else {
-        els.forEach(function(el) { el.classList.add('visible'); });
+        els.forEach(function(el) { el.classList.add('on'); });
     }
 })();
 </script>
